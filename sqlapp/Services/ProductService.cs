@@ -7,10 +7,10 @@ namespace sqlapp.Services
     // This service will interact with our Product data in the SQL database
     public class ProductService
     {
-        private static string db_source = "practicesqlserver0810.database.windows.net";
-        private static string db_user = "practicesqlserver0810";
-        private static string db_password = "Virtualmachine123";
-        private static string db_database = "practicesql";
+        private static string db_source = "cmidw1server5504.database.windows.net";
+        private static string db_user = "cmidw1db5504";
+        private static string db_password = "Khdr@2022";
+        private static string db_database = "cmidw15504";
 
         private SqlConnection GetConnection()
         {
