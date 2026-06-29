@@ -21,16 +21,11 @@ steps:
     packageType: 'sdk'
     version: '6.x'
 
-#- task: NuGetCommand@2
-#  inputs:
-#    restoreSolution: '$(solution)'
-
-- task: DotNetCoreCLI@2
+- task: NuGetCommand@2
   inputs:
-    azureSubscription: 'Azure subscription(3)(85636d15-b17d-4a26-96cf-3469cb014f19)'
-    command: 'restore'
-    restoreArguments: '**/*.csproj'
-    feedsToUse: 'select'
+    restoreSolution: '$(solution)'
+
+
 - task: DotNetCoreCLI@2
   inputs:
     azureSubscription: 'Azure subscription(2)(85636d15-b17d-4a26-96cf-3469cb014f19)'
