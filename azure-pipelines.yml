@@ -31,7 +31,7 @@ steps:
     azureSubscription: 'Azure subscription(2)(85636d15-b17d-4a26-96cf-3469cb014f19)'
     command: 'build'
     projects: '**/*.csproj'
-    arguments: '--configuration $(build.Configuration)'
+    arguments: '--configuration $(buildConfiguration)'
 
 #- task: VSBuild@1
 #  inputs:
@@ -45,4 +45,4 @@ steps:
     azureSubscription: 'Azure subscription(4)(85636d15-b17d-4a26-96cf-3469cb014f19)'
     command: 'publish'
     publishWebProjects: true
-    arguments: '--configuration $(build.Configuration) --output $(build.ArtifactStagingDirectory)'
+    arguments: '--configuration $(buildConfiguration) --output $(build.ArtifactStagingDirectory)'
