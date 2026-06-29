@@ -29,7 +29,7 @@ steps:
   inputs:
     azureSubscription: 'Azure subscription(3)(85636d15-b17d-4a26-96cf-3469cb014f19)'
     command: 'restore'
-    restoreArguments: '$(solution)'
+    restoreArguments: '**/*.csproj'
     feedsToUse: 'select'
 - task: DotNetCoreCLI@2
   inputs:
