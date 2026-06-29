@@ -1,0 +1,1 @@
+[![Build Status](https://dev.azure.com/mypracticedevopsorg/Azure_DevOps_2026_Project/_apis/build/status%2FAzureDevOps2026.sqlapp?branchName=main)](https://dev.azure.com/mypracticedevopsorg/Azure_DevOps_2026_Project/_build/latest?definitionId=67&branchName=main)
